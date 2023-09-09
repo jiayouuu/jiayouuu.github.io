@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+    width: 10rem;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    background: linear-gradient(to top right, #669694, #DFEBE4);
+
+    header {
+        z-index: 1;
+        width: 10rem;
+        height: .8564rem;
+        position: fixed;
+        top: 0;
+        background-color: #D5E8E4;
+        font: .3rem/.2447rem 'ALmmFangYuanTi';
+        box-shadow: 0 .0408rem .0408rem .0408rem rgba(0, 0, 0, 0.2);
+
+        .slogan {
+            width: 5rem;
+            margin: .0816rem auto;
+            cursor: default;
+            text-align: center;
+
+            .slogan1 {
+                float: left;
+                margin: .0408rem;
+
+                span {
+                    padding: 0 .0408rem;
+                }
+            }
+
+            .slogan2 {
+                float: right;
+                margin: .0408rem;
+            }
+
+        }
+    }
+
+    footer {
+        z-index: 1;
+        width: 10rem;
+        height: .8564rem;
+        position: fixed;
+        background-color: #2B5453;
+        bottom: 0;
+        box-shadow: 0 -.0408rem .0408rem .0408rem rgba(0, 0, 0, 0.2);
+
+        div {
+            width: 4rem;
+            height: .8564rem;
+            margin: 0 auto;
+            border-radius: .06rem;
+
+            cursor: default;
+            background-color: #B5D1CF;
+            text-align: center;
+            font: .25rem/.8564rem 'ALmmFangYuanTi';
+        }
+    }
+}
+
+@media screen and (max-width:420px) {
+    .main {
+        position: relative;
+        width: 10rem;
+        height: 100vh;
+        margin: 0 auto;
+        background: linear-gradient(to top right, #669694, #DFEBE4);
+
+        header {
+            z-index: 1;
+            width: 10rem;
+            height: .8564rem*2;
+            position: fixed;
+            top: 0;
+            background-color: #D5E8E4;
+            font: .6rem/.4894rem 'ALmmFangYuanTi';
+            box-shadow: 0 .0408rem .0408rem .0408rem rgba(0, 0, 0, 0.2);
+
+            .slogan {
+                width: 5rem*1.5;
+                margin: .0816rem*2 auto;
+                cursor: default;
+                text-align: center;
+
+                .slogan1 {
+                    float: left;
+                    margin: .0408rem*2;
+
+                    span {
+                        padding: 0 .0408rem*2;
+                    }
+                }
+
+                .slogan2 {
+                    float: right;
+                    margin: .0408rem*2;
+                }
+
+            }
+        }
+
+        footer {
+            z-index: 1;
+            width: 10rem;
+            height: .8564rem*2;
+            position: fixed;
+            background-color: #2B5453;
+            bottom: 0;
+            box-shadow: 0 -.0408rem .0408rem .0408rem rgba(0, 0, 0, 0.2);
+
+            div {
+                width: 4rem;
+                height: .8564rem*2;
+                margin: 0 auto;
+                border-radius: .06rem*2;
+                background-color: #B5D1CF;
+                text-align: center;
+                font: .5rem/1.7128rem 'ALmmFangYuanTi';
+            }
+        }
+    }
+}
