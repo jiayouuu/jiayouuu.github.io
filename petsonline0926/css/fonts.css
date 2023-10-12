@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'AlimamaFangYuanTi';
+  src: url('../fonts/fontFamily/AlimamaFangYuanTiVF-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/fontIcon/icomoon.eot?d5vizk');
+  src: url('../fonts/fontIcon/icomoon.eot?d5vizk#iefix') format('embedded-opentype'),
+    url('../fonts/fontIcon/icomoon.ttf?d5vizk') format('truetype'),
+    url('../fonts/fontIcon/icomoon.woff?d5vizk') format('woff'),
+    url('../fonts/fontIcon/icomoon.svg?d5vizk#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}

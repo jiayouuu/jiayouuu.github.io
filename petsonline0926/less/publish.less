@@ -1,0 +1,593 @@
+header {
+    height: 410px;
+    position: relative;
+
+    .left {
+        width: 195px;
+        height: 410px;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        .logo {
+            width: 195px;
+            height: 195px;
+            position: absolute;
+            top: 0;
+            background-color: red;
+            background: url(../images/logoleft.png) no-repeat;
+            background-size: 100%;
+            background-position: center;
+            cursor: pointer;
+
+        }
+
+        .title {
+            width: 195px;
+            height: 50px;
+            position: absolute;
+            top: 210px;
+            text-align: center;
+            font: 500 30px/50px 'alimamafangyuanti';
+            border-radius: 10px;
+            color: #333333;
+
+
+        }
+
+        .publish {
+            width: 150px;
+            height: 50px;
+            position: absolute;
+            top: 325px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            font: 500 30px/50px 'alimamafangyuanti';
+            border-radius: 10px;
+            background-color: #FF8200;
+            box-shadow: 0 5px 10px 5px rgba(255, 130, 0, .3);
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    .main {
+        width: 720px;
+        height: 410px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .about {
+            height: 170px;
+            display: flex;
+            background-color: #fff;
+
+            .portrait {
+                flex: 2;
+                position: relative;
+
+                .ico {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    cursor: pointer;
+                    border: 1px solid #FEF2E6;
+                    background: url(../images/portrait-default/2.png) no-repeat;
+                    background-size: 100%;
+                    background-position: center;
+
+                }
+            }
+
+            .detail {
+                flex: 8;
+
+                .uesrname {
+                    margin-top: 30px;
+                    height: 30px;
+                    width: 240px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font: 500 25px/30px 'alimamafangyuanti';
+                    color: #333333;
+                    cursor: pointer;
+                }
+
+                .id {
+                    height: 35px;
+                    width: 240px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font: 400 18px/30px 'alimamafangyuanti';
+                    color: #939393;
+
+                    span:nth-child(1) {
+                        cursor: pointer;
+                    }
+                }
+
+                .synopsis {
+                    margin-top: -8px;
+                    height: 80px;
+                    width: 240px;
+                    font: 400 18px/20px 'alimamafangyuanti';
+                    color: #939393;
+
+                    span:nth-child(1) {
+                        cursor: pointer;
+                    }
+
+                    span:nth-child(2) {
+                        max-height: 60;
+                        display: block;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 3;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+
+            }
+        }
+
+        .over-view {
+            height: 230px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            background-color: #fff;
+
+            &>.title {
+                flex: 2;
+                font: 500 30px/46px 'alimamafangyuanti';
+                position: relative;
+                padding-left: 25px;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 8px;
+                    height: 30px;
+                    top: 50%;
+                    left: 15px;
+                    transform: translateY(-50%);
+                    background-color: #FF8200;
+                    border-radius: 4px;
+
+                }
+            }
+
+            .detail {
+                flex: 8;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                &>div {
+                    background-color: #FBFBFB;
+                    border-radius: 8px;
+                    width: 100px;
+                    height: 100px;
+                    padding: 15px;
+                    font: 400 20px/20px 'alimamafangyuanti';
+                    cursor: pointer;
+
+                    .title {
+                        color: #939393;
+                    }
+
+                    .count {
+                        padding-top: 10px;
+                        font: 700 25px/25px 'alimamafangyuanti'
+                    }
+                }
+            }
+
+            .recently {
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                width: 70px;
+                height: 30px;
+                border: 1px solid #939393;
+                border-radius: 5px;
+                text-align: center;
+                font: 300 18px/30px 'alimamafuangyuanti';
+                cursor: pointer;
+
+                span:nth-child(2) {
+                    font-family: 'icomoon';
+                    display: inline-block;
+                    transform: rotate(90deg);
+                }
+
+            }
+        }
+    }
+
+    .right {
+        width: 195px;
+        height: 410px;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        .inspiration {
+            position: absolute;
+            top: 35px;
+            width: 195px;
+            height: 100px;
+
+            .title {
+
+                float: left;
+                font: 400 30px/100px 'alimamafangyuanti';
+                position: relative;
+                margin-left: 8px;
+                cursor: pointer;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 8px;
+                    height: 30px;
+                    top: 50%;
+                    left: -8px;
+                    transform: translateY(-50%);
+                    background-color: #FF8200;
+                    border-radius: 4px;
+                }
+            }
+
+            .more {
+                float: right;
+                width: 36px;
+                font: 300 18px/18px 'alimamafangyuanti';
+                margin: 10px 18px 0 0;
+                position: relative;
+                color: #939393;
+                cursor: pointer;
+
+                &::after {
+                    content: '';
+                    width: 18px;
+                    height: 18px;
+
+                    position: absolute;
+                    top: 0;
+                    right: -18px;
+                    font-family: 'icomoon';
+                }
+            }
+        }
+
+        .hots {
+            position: absolute;
+            width: 195px;
+            height: 230px;
+            top: 180px;
+
+            .title {
+                position: absolute;
+                top: 0px;
+                left: 0;
+                height: 46px;
+                width: 195px;
+                font: 400 30px/46px 'alimamafangyuanti';
+                padding-left: 8px;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 8px;
+                    height: 30px;
+                    top: 50%;
+                    left: 0px;
+                    transform: translateY(-50%);
+                    background-color: #FF8200;
+                    border-radius: 4px;
+                }
+            }
+
+            .picture {
+                position: absolute;
+                top: 46px;
+                left: 8px;
+                height: 100px;
+                width: 179px;
+                background: url(../images/publish/hots.jpg) no-repeat;
+                background-position: center;
+                background-size: cover;
+                cursor: pointer;
+            }
+
+            .theme {
+                position: absolute;
+                top: 146px;
+                left: 8px;
+                height: 30px;
+                width: 195px;
+
+                font: 400 18px/30px 'alimamafangyuanti';
+                cursor: pointer;
+            }
+
+            .more {
+                position: absolute;
+                top: 200px;
+                left: 8px;
+                height: 20px;
+                width: 54px;
+                font: 400 16px/20px 'alimamafangyuanti';
+                color: #939393;
+                cursor: pointer;
+
+                &::after {
+                    content: '';
+                    width: 16px;
+                    height: 16px;
+                    position: absolute;
+                    top: -1.5px;
+                    right: 8px;
+                    font-family: 'icomoon';
+                }
+            }
+
+
+        }
+    }
+}
+
+nav {
+    .content {
+        position: sticky;
+        top: 0;
+
+        div {
+
+            width: 100%;
+            height: 50px;
+            margin: 5px auto;
+            border-radius: 25px;
+            display: flex;
+            cursor: pointer;
+
+            span:nth-child(1) {
+                font: 400 25px/50px 'icomoon';
+                flex: 4;
+                text-align: center;
+            }
+
+            span:nth-child(2) {
+                font: 400 25px/50px 'AlimamaFangYuanTi';
+                flex: 7;
+
+            }
+        }
+    }
+
+    position: absolute;
+    width: 195px;
+    height: 220px;
+    top: 420px;
+    left: 0;
+    color: #333333;
+    background-color: #fff;
+    height: 320px;
+}
+
+main {
+    position: absolute;
+    width: 720px;
+    height: 320px;
+    top: 420px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+
+    .text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 720px;
+        height: 180px;
+
+
+        textarea {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #939393;
+            border-radius: 8px;
+            outline: none;
+            resize: none;
+            font: 400 25px/30px 'alimamafangyuanti';
+
+            &:focus {
+                border: 1px solid #FF8200;
+            }
+        }
+    }
+
+    .more {
+        position: absolute;
+
+        height: 50px;
+        width: 80%;
+        top: 180px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &>div {
+            width: 80px;
+            height: 30px;
+            text-align: center;
+            border-radius: 15px;
+
+
+            span:nth-child(1) {
+                font: 400 20px/30px 'icomoon'
+            }
+
+            span:nth-child(2) {
+                font: 400 20px/30px 'alimamafangyuanti';
+                cursor: pointer;
+            }
+        }
+    }
+
+    .publish-now {
+        position: absolute;
+        width: 150px;
+        height: 50px;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font: 500 30px/50px 'alimamafangyuanti';
+        border-radius: 10px;
+        background-color: #FF8200;
+        box-shadow: 0 5px 10px 5px rgba(255, 130, 0, .3);
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+aside {
+    position: absolute;
+    top: 420px;
+    right: 0;
+    width: 195px;
+    height: 320px;
+    background-color: #fff;
+
+    .title {
+        height: 50px;
+        font: 500 30px/50px 'alimamafangyuanti';
+        color: #333;
+        margin-left: 8px;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 8px;
+            height: 30px;
+            top: 50%;
+            left: -8px;
+            transform: translateY(-50%);
+            background-color: #FF8200;
+            border-radius: 4px;
+        }
+    }
+
+    ul {
+        li {
+            padding-left: 8px;
+            height: 30px;
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            span:nth-child(1) {
+                color: #FF8200;
+            }
+
+            span:nth-child(2) {
+                font: 300 20px/30px 'alimamafangyuanti';
+                cursor: pointer;
+                color: #333333;
+            }
+        }
+    }
+}
+
+@keyframes bgMove {
+    0% {
+        left:0;
+    }
+
+    100% {
+        left: -2560px;
+    }
+}
+
+@keyframes bearMove {
+    0% {
+        top: 45%;
+        left: 0;
+        transform: translateX(0);
+    }
+
+    100% {
+        top: 45%;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+}
+
+@keyframes bearRun {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -1280px 0;
+    }
+}
+
+.foot-animation {
+    width: 1120px;
+    height: 224px;
+    position: absolute;
+    top: 740px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        // width:2560px+1120px=3680;
+        width: 3680px;
+        height: 224px;
+        background: #fff url(../images/animation/background.png) repeat-x;
+        background-size:auto 100%;
+        transition: all 4s ease-in;
+        animation: bgMove 5s linear 1.5s infinite;
+    }
+
+    .bear {
+        width: 160px;
+        height: 80px;
+        position: absolute;
+        top: 45%;
+        left: 0;
+        background: url(../images/animation/bear.png) no-repeat;
+        background-size: auto 100%;
+        animation: bearMove 2s ease-in-out 1 forwards,bearRun .6s steps(8) infinite;
+    }
+}
