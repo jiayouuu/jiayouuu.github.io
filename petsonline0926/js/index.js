@@ -124,15 +124,15 @@ logoEl.addEventListener('click',()=>{
 asideEl.addEventListener('click', event => {
     //点击登录跳转
     if (event.target === loginEl) {
-        window.open('../login.html?1', '_self')
+        window.open('./login.html?1', '_self')
     }
     else if (event.target === registerEl) {
-        window.open('../login.html?2', '_self')
+        window.open('./login.html?2', '_self')
     }
 })
 NavEl.addEventListener('click', (event) => {
     if (event.target.parentNode.classList.contains('publish')) {
-        window.open('../publish.html', '_self')
+        window.open('./publish.html', '_self')
     }
 })
 let concernEl = document.querySelectorAll('main article .item .head .concern')
